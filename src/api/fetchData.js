@@ -14,7 +14,7 @@ function useDataFetcher() {
     headers: {
       "Content-Type": "application/json",
       // Pass headersData here
-      "Your-Custom-Header": headersData,
+      "Custom-Header": headersData,
     },
   };
   useEffect(() => {

@@ -4,8 +4,9 @@ import { Box, Grid } from "@mui/material";
 import JobCard from "./components/JobCard";
 
 function App() {
-  const [jobs, setJobs] = useState([]); // Initialize jobs as an empty array
-  const [isLoading, setIsLoading] = useState(false);
+  // jobs will be an array which will be filled with the data coming from API
+  const [jobs, setJobs] = useState([]);
+  //const [isLoading, setIsLoading] = useState(false);
 
   const { data, isLoading: dataIsLoading, error } = useDataFetcher();
 
@@ -27,7 +28,7 @@ function App() {
                 <JobCard job={job} />
               </Grid>
             ))}
-            {(isLoading || dataIsLoading) && <p>Loading...</p>}
+            {dataIsLoading && <p>Loading...</p>}
           </Grid>
         </Box>
       ) : (
