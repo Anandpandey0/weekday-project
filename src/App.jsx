@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import useDataFetcher from "./api/fetchData";
 import { Box, Grid } from "@mui/material";
 import JobCard from "./components/JobCard";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   // jobs will be an array which will be filled with the data coming from API
@@ -19,6 +20,7 @@ function App() {
   }, [data]);
   return (
     <>
+      <SearchBar />
       {data ? (
         <Box sx={{ flexGrow: 1 }} padding={{ md: 5 }} borderRadius="20px">
           {error && <p>Error: {error.message}</p>}
