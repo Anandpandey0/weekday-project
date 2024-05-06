@@ -1,0 +1,6 @@
+Checkpoint #1. Create the job card and make it dynamic . ( Using React.js and MaterialUI).
+Checkpoint #2. Test the API and pass the values to the job card.
+Checkpoint #3. Make the search bar UI .
+Checkpoint #4. Add functionality to filter jobs.
+Checkpoint #5. Add Debouncing feature so that it minimuse multiple hits while filtering
+Checkpoint #6. Add infinite scroll feature using throttling method 
